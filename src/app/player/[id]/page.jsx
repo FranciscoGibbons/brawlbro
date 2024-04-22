@@ -19,6 +19,7 @@ const getPlayer = async (id) => {
     console.log(data)
     return data;
   } catch (error) {
+    console.error('Error:', error);
     notFound()
   }
 };
