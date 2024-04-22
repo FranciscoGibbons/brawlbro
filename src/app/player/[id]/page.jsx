@@ -30,7 +30,7 @@ export default async function PlayerPage( { params } ) {
   return (
     <div>
        <h1 className="text-2xl">{player.name} Stats | BrawlBro</h1>
-       <h2>{player.brawlers.length} / 78 Unlocked Brawlers</h2>
+       <h2>{player.brawlers.length} / 78 Unlocked Brawlers a</h2>
 
         {
             player.brawlers.sort((a, b) => b.trophies - a.trophies).map(brawler => <h3 key={brawler.id}><Image width={100} height={100} src={`/brawlers-pin/${brawler.name.toLowerCase()}_pin.webp`} alt=""/> {brawler.name} - {brawler.trophies} 🏆 - Rank {brawler.rank}</h3>)
